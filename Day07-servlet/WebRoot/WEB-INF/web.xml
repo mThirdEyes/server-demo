@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+		<context-param>
+			<param-name>name</param-name>
+			<param-value>jerry</param-value>
+		</context-param>
+		<context-param>
+			<param-name>password</param-name>
+			<param-value>1234</param-value>
+		</context-param>
+	
+		<!-- 注册servlet到项目中 -->
+		<servlet>
+		<!-- servlet-name给你要注册的servlet起一个名字,随便写.不能重复.  -->
+			<servlet-name>AServlet</servlet-name>
+			<!-- 完整类名 -->
+			<servlet-class>cn.itcast.servlet.hello.AServlet</servlet-class>
+			<load-on-startup>3</load-on-startup>
+		</servlet>
+		
+		<!-- 分配路径给servlet  -->
+		<servlet-mapping>
+			<!-- 当前在为哪个servlet 分 配路径. -->
+			<servlet-name>AServlet</servlet-name>
+			<!-- "/"相对于项目路径的.==> http://localhost:8080/Day07-servlet
+				访问该servlet的url==>http://localhost:8080/Day07-servlet/AServlet.do
+			 -->
+			<url-pattern>/AServlet</url-pattern>
+		</servlet-mapping>
+		
+		
+		<servlet>
+			<servlet-name>BServlet</servlet-name>
+			<servlet-class>cn.itcast.servlet.servlet_config.BServlet</servlet-class>
+			<init-param>
+				<param-name>name</param-name>
+				<param-value>tom</param-value>
+			</init-param>
+			<init-param>
+				<param-name>password</param-name>
+				<param-value>1234</param-value>
+			</init-param>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>BServlet</servlet-name>
+			<url-pattern>/BServlet</url-pattern>
+		</servlet-mapping>
+		
+		<servlet>
+			<servlet-name>CServlet</servlet-name>
+			<servlet-class>cn.itcast.servlet.generic.CServlet</servlet-class>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>CServlet</servlet-name>
+			<url-pattern>/CServlet</url-pattern>
+		</servlet-mapping>
+		
+		
+		<servlet>
+			<servlet-name>DServlet</servlet-name>
+			<servlet-class>cn.itcast.servlet.http.DServlet</servlet-class>
+		</servlet>
+  <servlet>
+    <servlet-name>EServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.http.EServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.threadsafe.FServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.servlet_context.GServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>HServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.servlet_context.HServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.servlet_context.IServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>JServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.servlet_context.JServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>KServlet</servlet-name>
+    <servlet-class>cn.itcast.servlet.servlet_context.KServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+		
+		<servlet-mapping>
+			<servlet-name>DServlet</servlet-name>
+			<url-pattern>/DServlet</url-pattern>
+		</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EServlet</servlet-name>
+    <url-pattern>/EServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FServlet</servlet-name>
+    <url-pattern>/FServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GServlet</servlet-name>
+    <url-pattern>/GServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HServlet</servlet-name>
+    <url-pattern>/HServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IServlet</servlet-name>
+    <url-pattern>/IServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JServlet</servlet-name>
+    <url-pattern>/JServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>KServlet</servlet-name>
+    <url-pattern>/KServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
