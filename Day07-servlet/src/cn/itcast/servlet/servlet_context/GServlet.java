@@ -28,6 +28,8 @@ public class GServlet extends HttpServlet {
 
 
 
+
+
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
