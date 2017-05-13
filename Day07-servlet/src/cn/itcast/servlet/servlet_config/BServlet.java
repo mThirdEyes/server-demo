@@ -18,6 +18,8 @@ public class BServlet implements Servlet {
 	}
 
 
+
+
 	public void service(ServletRequest req, ServletResponse res)
 			throws ServletException, IOException {
 		//1获得servlet的name

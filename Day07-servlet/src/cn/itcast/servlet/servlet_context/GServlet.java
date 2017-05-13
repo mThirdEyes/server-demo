@@ -25,7 +25,9 @@ public class GServlet extends HttpServlet {
 					
 					response.getWriter().print(key+"===>"+value+"<br/>");
 				}
-		
+
+
+
 	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
