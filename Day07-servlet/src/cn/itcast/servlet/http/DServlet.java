@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServletResponse;
 
 public class DServlet  extends MyHttpServlet {
 
+
+
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp) {
 		
@@ -12,7 +14,9 @@ public class DServlet  extends MyHttpServlet {
 	}
 	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse resp) {
-		
+
+
+
 		System.out.println("您现在是使用POST方式访问!");
 	}
 	
