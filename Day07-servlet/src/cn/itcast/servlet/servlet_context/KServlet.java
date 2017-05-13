@@ -28,7 +28,8 @@ public class KServlet extends HttpServlet {
 			InputStream is = this.getClass().getResourceAsStream("students.xml");
 			System.out.println(is);
 			//二:使用this.getClass().getClassLoader().getResourceAsStream("");获得
-				//只有一个相对路径 ==> 就是相对于 classes目录
+				//只有一个相
+		// 对路径 ==> 就是相对于 classes目录
 			InputStream is2 = 	this.getClass().getClassLoader().getResourceAsStream("students.xml");
 			System.out.println(is2);
 			
