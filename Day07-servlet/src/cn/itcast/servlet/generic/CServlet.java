@@ -24,6 +24,9 @@ public class CServlet  extends MyGenericServlet {
 		String servletName = getServletName();
 		
 		arg1.getWriter().print(servletName);
+
+
+
 	}
 
 	@Override

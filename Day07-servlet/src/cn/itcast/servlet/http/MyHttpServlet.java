@@ -19,8 +19,12 @@ public abstract class MyHttpServlet extends MyGenericServlet {
 		//优化1: 我们开发项目都是基于HTTP协议的, 而且服务器在service方法中传给我的ServletRequest对象,实际上就是HttpServletRequest对象
 		//所以我们把 request和 response强转成HTTP的.
 		HttpServletRequest request = null;
+
+
 		HttpServletResponse response = null;
-		
+
+
+
 		try {
 			request = (HttpServletRequest) req;
 			response = (HttpServletResponse) resp;
