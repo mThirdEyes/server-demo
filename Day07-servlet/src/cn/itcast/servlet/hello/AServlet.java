@@ -21,7 +21,9 @@ public class AServlet implements Servlet {
 			throws ServletException, IOException {
 		arg1.getWriter().print("hello world!");
 		System.out.println("AServlet的service方法被调用了.");
-	
+
+
+
 	}
 	// 在服务器将要关闭时,会销毁内存中的servlet实例. 在销毁之前会调用destroy方法.
 	public void destroy() {
