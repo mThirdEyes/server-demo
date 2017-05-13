@@ -18,14 +18,13 @@ public abstract class MyGenericServlet implements Servlet, ServletConfig {
 		return config;
 	}
 
+
 	public String getServletInfo() {
 		return "";
 	}
 
 	public void init(ServletConfig arg0) throws ServletException {
 		//
-
-
 		this.config = arg0;
 		//子类直接重写 接口中的init的方法会把this.config = arg0; 代码覆盖,所以要提供一个空参init方法用来初始化动作.
 		this.init();

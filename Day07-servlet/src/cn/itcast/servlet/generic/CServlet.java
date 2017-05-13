@@ -22,7 +22,8 @@ public class CServlet  extends MyGenericServlet {
 	public void service(ServletRequest arg0, ServletResponse arg1)
 			throws ServletException, IOException {
 		String servletName = getServletName();
-		
+
+
 		arg1.getWriter().print(servletName);
 
 
