@@ -28,6 +28,7 @@ public class JServlet extends HttpServlet {
 		//其实 javaee 在servletContext 中准备了一些获得资源的相关方法
 			//1 获得sc
 
+
 			ServletContext sc = getServletContext();
 			//2 getResourceAsStream ==> 填写相对路径即可, 相对的是webRoot下
 				InputStream is = sc.getResourceAsStream("/WEB-INF/students.xml");

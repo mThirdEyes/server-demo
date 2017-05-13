@@ -22,6 +22,7 @@ public class IServlet extends HttpServlet {
 		Constant.map.remove("car");*/
 		//通过servletContext取值
 			//1获得servletContext对象
+
 		ServletContext sc = getServletContext();
 			//2 操作map
 			String bag = (String) sc.getAttribute("bag");
