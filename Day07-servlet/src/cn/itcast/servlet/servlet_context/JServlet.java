@@ -20,6 +20,8 @@ public class JServlet extends HttpServlet {
 			//File对象填写相对路径,相对的是tomcat目录下的bin目录
 			//不能使用File的相对路径来获得xml
 					/*File xml = new File(".");
+
+
 					String path =  xml.getAbsolutePath();
 					System.out.println(path);*/
 		
